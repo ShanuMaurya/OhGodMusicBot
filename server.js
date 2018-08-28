@@ -1,6 +1,6 @@
 const { Client } = require('discord.js');
 const yt = require('ytdl-core');
-// const tokens = require('./tokens.json');
+const tokens = require('./tokens.json');
 const client = new Client();
 
 let queue = {};
@@ -94,4 +94,4 @@ client.on('message', msg => {
 	if (!msg.content.startsWith(prefix)) return;
 	if (commands.hasOwnProperty(msg.content.toLowerCase().slice(prefix.length).split(' ')[0])) commands[msg.content.toLowerCase().slice(prefix.length).split(' ')[0]](msg);
 });
-client.login("ToKEN")
+client.login("KEN")
